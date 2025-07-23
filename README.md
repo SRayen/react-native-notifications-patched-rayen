@@ -9,6 +9,7 @@
 [![npm (tag)](https://img.shields.io/npm/v/react-native-notifications/snapshot.svg)](https://github.com/wix/react-native-notifications/tree/master)
 
 Handle all the aspects of push notifications for your app, including remote and local notifications, interactive notifications, silent notifications, and more.
+Fixes issue where the app would reload entirely when tapping on a push notification on Android.
 
 **All the native iOS notifications features are supported!**
 
