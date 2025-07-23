@@ -76,7 +76,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/react-native-notifications.git"
+    "url": "https://github.com/SRayen/react-native-notifications-patched-rayen.git"
   },
   "homepage": "https://github.com/wix/react-native-notifications",
   "bugs": {
