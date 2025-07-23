@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src=".logo.png"/><br/>
-  React Native Notifications
+  React Native Notifications Patched
 </h1>
 
 ![npm](https://img.shields.io/npm/dw/react-native-notifications.svg)
