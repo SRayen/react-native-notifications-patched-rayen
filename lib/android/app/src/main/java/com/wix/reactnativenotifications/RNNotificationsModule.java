@@ -60,16 +60,17 @@ public class RNNotificationsModule extends ReactContextBaseJavaModule implements
 
     }
 
-    @Override
-    public void onNewIntent(Intent intent) {
-        if (NotificationIntentAdapter.canHandleIntent(intent)) {
-            Bundle notificationData = intent.getExtras();
-            final IPushNotification notification = PushNotification.get(getReactApplicationContext().getApplicationContext(), notificationData);
-            if (notification != null) {
-                notification.onOpened();
-            }
+@Override
+public void onNewIntent(Intent intent) {
+    if (NotificationIntentAdapter.canHandleIntent(intent)) {
+        Bundle notificationData = NotificationIntentAdapter.extractPendingNotificationDataFromIntent(intent);
+        final IPushNotification notification = PushNotification.get(getReactApplicationContext().getApplicationContext(), notificationData);
+        if (notification != null) {
+            notification.onOpened();
         }
     }
+}
+
 
     @ReactMethod
     public void refreshToken() {
